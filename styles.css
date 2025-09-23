@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'Dubai';
+	src: url('resources/fonts/Dubai-Regular.woff') format('.woff');
+}
+
+@font-face {
+	font-family: 'Dubai';
+	src: url('resources/fonts/Dubai-Bold.woff') format('.woff');
+	font-weight: bold;
+}
+
+body {
+	font-family: 'Dubai', sans-serif;
+	text-align: center;
+	margin: 0;
+	background: #fbfbfb;
+	color: #1e1e1e;
+}
+
+.navbar {
+	font-weight: bold;
+	display: grid;
+	grid-template-columns: 8% 1fr 8% 8%;
+	grid-template-rows: 5rem;
+	border-bottom: 8px solid #1e1e1e;
+}
+
+.navbar-links {
+	justify-content: space-evenly;
+	font-size: 32px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.center-vertically {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#logo-square-img {
+	margin: 0.5em 1em;
+	width: 6em;
+}
+
+#weather-container {
+	justify-content: space-evenly;
+	font-size: 24px;
+	background-color: #e0e0e0;
+}
+
+#weather-icon {
+	width: 2em;
+}
+
+#menu-container {
+	background-color: #c8c8c8;
+	padding: 1em 1.2em;
+	justify-content: center;
+}
