@@ -10,10 +10,11 @@
 	--spacing-md: 1em;
 	--spacing-lg: 2em;
 
-	--font-size-base: 18px;
-	--font-size-lg: 36px;
-	--font-size-xl: 48px;
-	--font-size-xxl: 64px;
+	--font-size-base: 1rem;
+	--font-size-md: 1.5rem;
+	--font-size-lg: 2rem;
+	--font-size-xl: 3rem;
+	--font-size-xxl: clamp(2.5rem, 5vw, 4rem);
 }
 
 @font-face {
@@ -34,6 +35,7 @@ body {
 	margin: 0;
 	background: var(--color-bg);
 	color: var(--color-text);
+	font-size: var(--font-size-base);
 }
 
 /* Headings & Text */
@@ -58,36 +60,36 @@ p {
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
 	grid-template-rows: 5rem;
-	border-bottom: 8px solid var(--color-text);
+	border-bottom: 0.5rem solid var(--color-text);
 }
 
 .navbar .logo {
 	margin: var(--spacing-sm) var(--spacing-md);
-	width: 6em;
+	width: 6rem;
 }
 
 .navbar-links {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
 	font-size: var(--font-size-lg);
-	list-style-type: none;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .weather {
-	font-size: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	padding: 0 1em;
+	font-size: var(--font-size-md);
 	background: var(--color-light);
+	padding: 0 1rem;
 }
 
 .weather-icon {
-	width: 2em;
+	width: 2rem;
+	margin-right: 0.5rem;
 }
 
 .menu-toggle {
@@ -95,13 +97,13 @@ p {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--color-light-alt);
-	padding: var(--spacing-sm) 1.2em;
+	padding: var(--spacing-sm) 1.2rem;
 	border: none;
 }
 
 /* HERO */
 .hero {
-	min-height: 80vh;
+	min-height: clamp(30rem, 80vh, 60rem);
 	background-image: linear-gradient(
 			to right,
 			rgba(0, 255, 0, 0.05) 0% 25%,
@@ -124,7 +126,7 @@ p {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: var(--color-bg);
-	text-shadow: 0 0 0.1em black;
+	text-shadow: 0 0 0.1rem black;
 }
 
 /* TOWN DESCRIPTION & EVENTS */
@@ -132,7 +134,7 @@ p {
 .events .description {
 	display: flex;
 	flex-direction: column;
-	margin: 0 20vw;
+	margin: 0 clamp(2rem, 20vw, 20%);
 }
 
 .town-info .description h2,
@@ -150,15 +152,15 @@ p {
 
 /* IMAGE SHOWCASE */
 .showcase {
-	margin: var(--spacing-lg) 10em;
+	margin: var(--spacing-lg) clamp(1rem, 8vw, 10rem);
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 	gap: var(--spacing-lg);
 }
 
 .showcase-img {
 	width: 100%;
-	height: 45vh;
+	height: 55vh;
 	object-fit: cover;
 }
 
@@ -173,7 +175,7 @@ p {
 	font-weight: bold;
 	border: none;
 	border-radius: 0.8em;
-	width: 10%;
+	max-width: 12rem;
 }
 
 .btn:hover {
