@@ -1,0 +1,55 @@
+/* BASE STYLES & VARIABLES */
+:root {
+	--color-text: #1e1e1e;
+	--color-bg: #fbfbfb;
+	--color-accent: #550000;
+	--color-light: #e0e0e0;
+	--color-light-alt: #c8c8c8;
+
+	--spacing-sm: 0.5em;
+	--spacing-md: 1em;
+	--spacing-lg: 2em;
+
+	--font-size-base: 1rem;
+	--font-size-md: 1.5rem;
+	--font-size-lg: 2rem;
+	--font-size-xl: 3rem;
+	--font-size-xxl: clamp(2.5rem, 5vw, 4rem);
+}
+
+@font-face {
+	font-family: 'Dubai';
+	src: url('resources/fonts/Dubai-Regular.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Dubai';
+	src: url('resources/fonts/Dubai-Bold.woff') format('woff');
+	font-weight: bold;
+}
+
+body {
+	font-family: 'Dubai', sans-serif;
+	text-align: center;
+	margin: 0;
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-size: var(--font-size-base);
+}
+
+/* Headings & Text */
+h1 {
+	font-size: var(--font-size-xxl);
+	font-weight: bold;
+}
+
+h2 {
+	font-size: var(--font-size-xl);
+	font-weight: bold;
+}
+
+p {
+	font-size: var(--font-size-base);
+	line-height: 1.6;
+}

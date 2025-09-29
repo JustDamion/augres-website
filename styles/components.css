@@ -1,0 +1,75 @@
+/* NAVBAR */
+.navbar-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: var(--font-size-lg);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.weather {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: var(--font-size-md);
+	background: var(--color-light);
+	padding: 0 1rem;
+}
+
+.weather-icon {
+	width: 2rem;
+	margin-right: 0.5rem;
+}
+
+.menu-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-light-alt);
+	padding: var(--spacing-sm) 1.2rem;
+	border: none;
+}
+
+/* TOWN DESCRIPTION */
+.town-info .description h2,
+.events .description h2 {
+	margin: 0;
+	text-align: left;
+	font-size: var(--font-size-xl);
+}
+
+.town-info .description p,
+.events .description p {
+	text-align: left;
+	font-size: var(--font-size-lg);
+}
+
+/* BUTTONS */
+.btn {
+	font-family: inherit;
+	text-decoration: none;
+	margin-bottom: var(--spacing-lg);
+	padding: 0.8em 1.6em;
+	background: var(--color-accent);
+	color: var(--color-bg);
+	font-size: var(--font-size-lg);
+	font-weight: bold;
+	border: none;
+	border-radius: 0.8em;
+	max-width: 12rem;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+/* FOOTER */
+.footer .links {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	margin: 1em 70em 0 0;
+	font-size: var(--font-size-base);
+}

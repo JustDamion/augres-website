@@ -1,0 +1,77 @@
+/* NAVBAR */
+.navbar {
+	font-weight: bold;
+	display: grid;
+	grid-template-columns: auto 1fr auto auto;
+	grid-template-rows: 5rem;
+	border-bottom: 0.5rem solid var(--color-text);
+}
+
+.navbar .logo {
+	margin: var(--spacing-sm) var(--spacing-md);
+	width: 6rem;
+}
+
+/* HERO */
+.hero {
+	min-height: clamp(30rem, 80vh, 60rem);
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 255, 0, 0.05) 0% 25%,
+			rgba(255, 235, 0, 0.05) 25% 50%,
+			rgba(255, 0, 0, 0.05) 50% 75%,
+			rgba(0, 145, 255, 0.06) 75% 100%
+		),
+		url('/resources/images/AuGresBridge.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: var(--spacing-lg);
+}
+
+.hero .hero-text {
+	font-size: var(--font-size-xxl);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--color-bg);
+	text-shadow: 0 0 0.1rem black;
+}
+
+/* TOWN DESCRIPTION */
+.town-info .description,
+.events .description {
+	display: flex;
+	flex-direction: column;
+	margin: 0 clamp(2rem, 20vw, 20%);
+}
+
+/* IMAGE SHOWCASE */
+.showcase {
+	margin: var(--spacing-lg) clamp(1rem, 8vw, 10rem);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+	gap: var(--spacing-lg);
+}
+
+.showcase-img {
+	width: 100%;
+	height: 55vh;
+	object-fit: cover;
+}
+
+/* FOOTER */
+.footer {
+	margin-top: var(--spacing-lg);
+	padding: var(--spacing-lg) var(--spacing-md);
+	background-color: var(--color-text);
+	color: var(--color-bg);
+	text-align: left;
+}
+
+.footer .logo {
+	margin: var(--spacing-md);
+	width: 6rem;
+}
