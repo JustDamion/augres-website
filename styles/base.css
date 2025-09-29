@@ -11,6 +11,7 @@
 	--spacing-lg: 2em;
 
 	--font-size-base: 1rem;
+	--font-size-sm: 1.2rem;
 	--font-size-md: 1.5rem;
 	--font-size-lg: 2rem;
 	--font-size-xl: 3rem;
@@ -19,13 +20,13 @@
 
 @font-face {
 	font-family: 'Dubai';
-	src: url('resources/fonts/Dubai-Regular.woff') format('woff');
+	src: url('/resources/fonts/Dubai-Regular.woff') format('woff');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Dubai';
-	src: url('resources/fonts/Dubai-Bold.woff') format('woff');
+	src: url('/resources/fonts/Dubai-Bold.woff') format('woff');
 	font-weight: bold;
 }
 

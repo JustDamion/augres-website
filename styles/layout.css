@@ -65,7 +65,7 @@
 /* FOOTER */
 .footer {
 	margin-top: var(--spacing-lg);
-	padding: var(--spacing-lg) var(--spacing-md);
+	padding: var(--spacing-lg);
 	background-color: var(--color-text);
 	color: var(--color-bg);
 	text-align: left;
