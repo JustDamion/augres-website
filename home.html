@@ -1,99 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Discover Au Gres, Michigan - things to do, events, food & drink, and more."
+		/>
+
+		<link rel="icon" href="resources/images/Logo-Round.webp" />
 		<title>Au Gres</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 
 	<body>
-		<nav class="navbar">
-			<img
-				id="logo-square-img"
-				src="resources/images/Logo-Square.webp"
-				alt="City of AuGres logo showing the four seasons as icons with text at the bottom saying Celebrate Our Seasons."
-			/>
-			<ul class="navbar-links center-vertically">
-				<li>Things to Do</li>
-				<li>Events</li>
-				<li>Food & Drink</li>
-			</ul>
-
-			<div id="weather-container" class="center-vertically">
+		<header>
+			<nav class="navbar">
 				<img
-					id="weather-icon"
-					src="resources/icons/Cloud.svg"
-					alt="Outline of a cloud"
+					class="logo"
+					src="resources/images/Logo-Square.webp"
+					alt="City of AuGres logo"
 				/>
-				<h2>67°</h2>
-			</div>
+				<ul class="navbar-links">
+					<li>Things to Do</li>
+					<li>Events</li>
+					<li>Food & Drink</li>
+				</ul>
 
-			<div id="menu-container" class="center-vertically">
-				<img
-					src="resources/icons/Menu.svg"
-					alt="Three horizontal lines indicating a menu."
-				/>
-			</div>
-		</nav>
-
-		<div id="content">
-			<div id="hero-container">
-				<div id="hero-text">
-					<h2>Celebrate our seasons</h2>
+				<div class="weather">
+					<img
+						class="weather-icon"
+						src="resources/icons/Cloud.svg"
+						alt="Outline of a cloud"
+					/>
+					<span class="weather-temp">67°</span>
 				</div>
+
+				<button class="menu-toggle" aria-label="Open menu">
+					<img src="resources/icons/Menu.svg" alt="" />
+				</button>
+			</nav>
+		</header>
+
+		<main>
+			<div id="content">
+				<section class="hero">
+					<div class="hero-text">
+						<h1>Celebrate our seasons</h1>
+					</div>
+				</section>
+
+				<section class="town-info">
+					<div class="description">
+						<h2>Au Gres, Michigan</h2>
+						<p>
+							Our neighborhoods and rural residential areas
+							offer a wide range of lifestyle choices.
+							Regardless of where you live or play, Au Gres
+							offers a unique lifestyle experience for
+							everyone!
+						</p>
+					</div>
+				</section>
 			</div>
 
-			<div id="town-desc">
-				<h2>Au Gres, Michigan</h2>
-				<p>
-					Our neighborhoods and rural residential areas offer a
-					wide range of lifestyle choices. Regardless of where
-					you live or play, Au Gres offers a unique lifestyle
-					experience for everyone!
-				</p>
-			</div>
-		</div>
+			<section class="showcase">
+				<img
+					class="showcase-img"
+					src="resources/images/LakeSunset.webp"
+					alt="A big lake during sunset"
+				/>
+				<img
+					class="showcase-img"
+					src="resources/images/LakeWinter.webp"
+					alt="A big unfrozen lake during winter with a boat floating in it"
+				/>
+				<img
+					class="showcase-img"
+					src="resources/images/Snowmobile.webp"
+					alt="Someone driving a snowmobile through the woods"
+				/>
+				<img
+					class="showcase-img"
+					src="resources/images/Deer.webp"
+					alt="A field with five deer running across it"
+				/>
+			</section>
 
-		<div class="img-wrapper">
-			<img
-				class="showcase-img"
-				src="resources/images/LakeSunset.webp"
-				alt="A big lake during sunset."
-			/>
-			<img
-				class="showcase-img"
-				src="resources/images/LakeWinter.webp"
-				alt="A big unfrozen lake during winter with a boat floating in it."
-			/>
-			<img
-				class="showcase-img"
-				src="resources/images/Snowmobile.webp"
-				alt="Someone driving a snowmobile through the woods."
-			/>
-			<img
-				class="showcase-img"
-				src="resources/images/Deer.webp"
-				alt="A field with five deer running across it."
-			/>
-		</div>
+			<section class="events">
+				<div class="description">
+					<h2>Events</h2>
+					<p>
+						To stay up-to-date on Au Gres events, "follow" us
+						on Facebook! And if you have any questions, please
+						contact us at 989-876-8811 during regular business
+						hrs: Mon-Thur: 8am-5pm & Fri 9am-3pm.
+					</p>
+					<a
+						class="btn"
+						href="https://www.facebook.com/CityofAuGres/events"
+						target="_blank"
+					>
+						Events
+					</a>
+				</div>
+			</section>
+		</main>
 
-		<div class="events-wrapper">
-			<div class="events-txt">
-				<h2>Events</h2>
-				<p>
-					To stay up-to-date on Au Gres events, "follow" us on
-					Facebook! And if you have any questions, please contact
-					us at 989-876-8811 during regular business hrs:
-					Mon-Thur: 8am-5pm & Fri 9am-3pm.
-				</p>
-				<a
-					href="https:/www.facebook.com/CityofAuGres/events"
-					target="_blank"
-				>
-					<button class="btn">Events</button>
-				</a>
-			</div>
-		</div>
-
-		<div class="footer"></div>
+		<footer>
+			<div class="footer"></div>
+		</footer>
 	</body>
 </html>
